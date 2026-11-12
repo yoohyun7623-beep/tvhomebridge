@@ -1,0 +1,13 @@
+# 비활성화할 패키지 목록 (한 줄에 하나, # 은 주석)
+# ⚠️ 제조사/모델마다 다릅니다. 아래 명령으로 먼저 확인한 뒤 직접 추가하세요.
+#   adb shell pm list packages | findstr /i "ad promo recommend tracking"   (Windows)
+#   adb shell pm list packages | grep -iE "ad|promo|recommend|tracking"     (macOS/Linux)
+# 되돌리기: adb shell pm enable --user 0 <패키지>
+#
+# 순정 Android TV 홈의 추천/프로모션 행 (커스텀 런처 사용 시 불필요)
+com.google.android.leanbacklauncher.recommendations
+com.google.android.tvrecommendations
+#
+# 아래는 예시 자리입니다. 실제 패키지명을 확인한 뒤 주석(#)을 풀고 수정하세요.
+# com.vendor.tv.ads
+# com.vendor.tv.promotion
